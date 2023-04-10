@@ -1,9 +1,9 @@
-import Header from './Header/header.jsx'
+import AppContent from './appcontent.jsx'
 
 function App() {
   return (
     <div>
-      <Header />
+      <AppContent/>
     </div>
   );
 }
