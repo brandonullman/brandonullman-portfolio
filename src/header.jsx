@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-const NavLink = ({ href, text }) => {
-
+const NavLink = ({ text }) => {
+  
   return (
-    <a href={href} className="group transition duration-300">
+    <button className="group transition duration-300">
       {text}
       <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#8FF6FF] mt-0.5"></span>
-    </a>
+    </button>
   );
 };
 
@@ -32,16 +32,16 @@ const Header = () => {
 
   const scrollPosition = useScrollPosition();
 
-    return (
-      <div className={`sticky top-0 flex gap-10 right-0 py-6 pr-14 text-2xl text-[#DFFDFF] justify-end border-black transition 
-        ${scrollPosition > 0 ? 'bg-[#0d2636] shadow-md border-b' : ''}`
-      }>
-          <NavLink href="#" text="About"/>
-          <NavLink href="#" text="Skills"/>
-          <NavLink href="#" text="Projects"/>
-          <NavLink href="#" text="Contact"/>
-      </div>
-    );
+  return (
+    <div className={`sticky top-0 flex gap-10 right-0 py-6 pr-14 text-2xl text-[#DFFDFF] justify-end border-black transition 
+      ${scrollPosition > 0 ? 'bg-[#0d2636] shadow-md border-b' : ''}`
+    }>
+        <NavLink text="About"/>
+        <NavLink text="Skills"/>
+        <NavLink text="Projects"/>
+        <NavLink text="Contact"/>
+    </div>
+  );
 };
 
 export default Header;
