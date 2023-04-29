@@ -12,12 +12,14 @@ import javascript from './media/javascript.png';
 import jira from './media/jira.png';
 import photoshop from './media/photoshop.png';
 import react from './media/react.png';
+import tailwind from './media/tailwind.png';
+import typescript from './media/typescript.png';
 
 const SkillsSection = ({ title, children }) => {
   return (
-    <div className="flex flex-col items-center bg-[#0d2636] w-[400px] rounded-md py-4">
-      <h1 className="text-2xl font-semibold text-[#D6D6D6]">{title}</h1>
-      <div className="grid grid-cols-3 gap-8 mt-8">{children}</div>
+    <div className="flex flex-col items-center bg-[#0d2636] w-[450px] rounded-md py-4 border border-black">
+      <h1 className="text-3xl font-semibold text-[#D6D6D6]">{title}</h1>
+      <div className="grid grid-cols-3 gap-10 m-8">{children}</div>
     </div>
   )
 };
@@ -33,13 +35,15 @@ const SkillsIcon = ({ icon, title }) => {
 
 const Skills = () => {
   return (
-    <div className="flex justify-center mt-32 gap-40">
+    <div className="flex justify-center mt-32 gap-28">
       <SkillsSection title="Languages and Frameworks">
         <SkillsIcon icon={html} title="HTML"/>
         <SkillsIcon icon={css} title="CSS"/>
         <SkillsIcon icon={javascript} title="Javascript"/>
         <SkillsIcon icon={react} title="ReactJS"/>
         <SkillsIcon icon={java} title="Java"/>
+        <SkillsIcon icon={tailwind} title="Tailwind"/>
+        <SkillsIcon icon={typescript} title="Typescript"/>
       </SkillsSection>
       <SkillsSection title="Tools and Technologies">
         <SkillsIcon icon={git} title="GIT"/>

@@ -32,7 +32,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-[#0d2636] mt-40 w-1/2 mx-auto rounded-md">
+    <div className="bg-[#0d2636] mt-32 w-1/2 mx-auto rounded-md border border-black">
       <div className="py-8 px-4 text-center w-3/4 mx-auto">
         <h1 className="mb-8 text-4xl font-semibold text-[#D6D6D6]">Want to Chat?</h1>
         <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-8">
@@ -42,7 +42,7 @@ const ContactForm = () => {
                 type='text' 
                 name='name' 
                 placeholder='Name'
-                className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.name && 'border-red-400'}`}
+                className={`px-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.name && 'border-red-400'}`}
                 {...register('name', {
                   required: { value: true, message: 'Please enter your name' },
                   maxLength: {
@@ -58,7 +58,7 @@ const ContactForm = () => {
                 type='text' 
                 name='email' 
                 placeholder='Email Address'
-                className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.email && 'border-red-400'}`}
+                className={`px-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.email && 'border-red-400'}`}
                 {...register('email', {
                   required: true,
                   pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -72,7 +72,7 @@ const ContactForm = () => {
               type='text' 
               name='subject' 
               placeholder='Subject'
-              className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.subject && 'border-red-400'}`}
+              className={`px-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.subject && 'border-red-400'}`}
               {...register('subject', {
                 required: { value: true, message: 'Please enter a subject' },
                 maxLength: {
@@ -88,14 +88,14 @@ const ContactForm = () => {
               rows="6" 
               name='message' 
               placeholder='Message'
-              className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.message && 'border-red-400'}`}
+              className={`px-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-md w-full ${errors.message && 'border-red-400'}`}
               {...register('message', {
                 required: true
               })}
             ></textarea>
             {errors.message && <span className="text-red-400 font-medium">Please enter a message</span>}
           </div>
-          <button type='submit' className="py-3 px-5 text-center text-[#D6D6D6] rounded-lg bg-[#081a25] hover:bg-[#05121a] focus:ring-4 focus:outline-none focus:ring-[#8FF6FF]">
+          <button type='submit' className="py-2 px-4 text-center font-semibold text-xl text-[#D6D6D6] rounded-lg bg-[#05121a] hover:border-[#8FF6FF] border-2 hover:text-[#8FF6FF] focus:ring-2 focus:outline-none focus:ring-[#8FF6FF]">
             Submit
           </button>
         </form>

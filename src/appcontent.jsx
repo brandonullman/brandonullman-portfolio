@@ -4,12 +4,13 @@ import Header from './header';
 import MediaFooter from './mediafooter';
 import Typewriter from 'typewriter-effect';
 import Skills from './skills';
+import Projects from './projects';
 import ContactForm from './contact';
 
 const AppContent = () => {
 
   return (
-    <div className="h-[3000px] bg-[#081a25]">
+    <div className="h-full bg-[#081a25] pb-12">
       <Header />
       <div className="pt-28 mx-auto text-center">
         <img src={brandonPicture} alt="Brandon Headshot" className="rounded-full w-100 h-100 mx-auto border-2 border-black" />
@@ -23,7 +24,7 @@ const AppContent = () => {
             cursorClassName: "text-5xl text-[#8FF6FF]"
           }}
         />
-        <h1 className="text-3xl font-normal text-[#D6D6D6] w-[50%] mx-auto mt-40">
+        <h1 className="text-3xl font-normal text-[#D6D6D6] w-[50%] mx-auto mt-32">
         My journey into frontend development started self-taught, and I quickly discovered the satisfaction of 
         solving complex problems and continuously learning in this field. With over two years of professional experience under 
         my belt, I take pride in my ability to transform complex ideas into user-friendly and visually appealing designs. 
@@ -33,6 +34,7 @@ const AppContent = () => {
         </h1>
       </div>
       <Skills />
+      <Projects />
       <ContactForm />
       <MediaFooter />
     </div>
