@@ -35,7 +35,7 @@ const SkillsIcon = ({ icon, title }) => {
 
 const Skills = () => {
   return (
-    <div className="flex justify-center mt-32 gap-28">
+    <div className="flex mt-32 justify-between mx-auto w-[50%]">
       <SkillsSection title="Languages and Frameworks">
         <SkillsIcon icon={html} title="HTML"/>
         <SkillsIcon icon={css} title="CSS"/>
