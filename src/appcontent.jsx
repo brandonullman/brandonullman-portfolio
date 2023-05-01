@@ -10,7 +10,7 @@ import Headshot from './headshot';
 const AppContent = () => {
 
   return (
-    <div className="h-full bg-[#081a25] pb-12">
+    <div className="h-full bg-[#141f25] pb-12">
       <Header />
       <div className="pt-16 mx-auto text-center">
         {/* <img src={brandonPicture} alt="Brandon Headshot" className="rounded-full w-100 h-100 mx-auto border-2 border-black" /> */}
