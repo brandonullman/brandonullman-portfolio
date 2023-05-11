@@ -26,7 +26,7 @@ const SkillsSection = ({ title, children }) => {
 
 const SkillsIcon = ({ icon, title }) => {
   return (
-    <div className="flex flex-col text-center text-[#D6D6D6] font-semibold">    
+    <div className="flex flex-col items-center text-center text-[#D6D6D6] font-semibold">    
       <img src={icon} alt={title} />
       <span className="pt-1">{title}</span>
     </div>
