@@ -4,7 +4,7 @@ import brandonPicture from './media/brandon-picture.jpg';
 const Headshot = () => {
 
   return (
-    <div className="w-[60%] h-[60%] lg:w-[600px] lg:h-[600px]">
+    <div className="w-[70%] h-[70%] xl:w-[600px] xl:h-[600px]">
       <svg viewBox="0 0 500 500">
         <image x="15" y="50" width="95%" height="95%" clip-path="url(#shape)" href={brandonPicture}/>                                                                 
         <clipPath id="shape">
