@@ -18,7 +18,7 @@ const ProjectInfo = ({ title, info, demoUrl, repoUrl }) => {
         <div className="text-md text-[#D6D6D6]">{info}</div>
       </div>
       <div className="flex justify-center items-end gap-8 py-2 lg:mb-4">
-        <a href="https://github.com/brandonullman" target="_blank" className="my-auto"><GithubIcon width="32px" height="32px"/></a>
+        <a href="https://github.com/brandonullman" target="_blank" rel="noreferrer" className="my-auto"><GithubIcon width="32px" height="32px"/></a>
         <DemoButton />
       </div>
     </div>

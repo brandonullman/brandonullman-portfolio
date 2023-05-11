@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './header';
-import MediaFooter from './mediafooter';
 import Typewriter from 'typewriter-effect';
 import Skills from './skills';
 import Projects from './projects';
 import ContactForm from './contact';
 import Headshot from './headshot';
+
+import { GithubIcon, LinkedinIcon } from './platformicons';
 
 const AppContent = () => {
 
@@ -26,10 +27,14 @@ const AppContent = () => {
                 cursorClassName: "text-3xl lg:text-5xl text-[#8FF6FF]"
               }}
             />
+            <div className="flex justify-center gap-8 mt-8">
+              <a href="https://github.com/brandonullman" target="_blank" rel="noreferrer"><GithubIcon width="60px" height="60px" /></a>
+              <a href="https://www.linkedin.com/in/brandonullman/" target="_blank" rel="noreferrer"><LinkedinIcon width="60px" height="60px" /></a>
+            </div>
           </div>
           <Headshot />
         </div>
-        <h1 className="lg:text-3xl text-2xl font-normal text-[#D6D6D6] w-[90%] lg:w-[70%] mx-auto mt-6 lg:mt-20">
+        <h1 className="lg:text-3xl text-xl font-normal text-[#D6D6D6] w-[90%] lg:w-[70%] mx-auto mt-4 lg:mt-24">
         My journey into frontend development started self-taught, and I quickly discovered the satisfaction of 
         solving complex problems and continuously learning in this field. With over two years of professional experience under 
         my belt, I take pride in my ability to transform complex ideas into user-friendly and visually appealing designs. 
