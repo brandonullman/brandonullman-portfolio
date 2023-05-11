@@ -32,8 +32,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-[#0d2636] mt-32 w-1/2 mx-auto rounded-md border border-black">
-      <div className="py-8 px-4 text-center w-3/4 mx-auto">
+    <div className="bg-[#0d2636] mt-12 w-[90%] lg:mt-32 lg:w-[70%] mx-auto rounded-md border border-black" id="contact">
+      <div className="py-8 px-4 text-center lg:w-3/4 mx-auto">
         <h1 className="mb-8 text-4xl font-semibold text-[#D6D6D6]">Want to Chat?</h1>
         <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-8">
           <div className="flex gap-4">

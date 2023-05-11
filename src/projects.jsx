@@ -14,10 +14,10 @@ const ProjectInfo = ({ title, info, demoUrl, repoUrl }) => {
   return (
     <div className="text-center h-full flex flex-col justify-between">
       <div>
-        <div className="py-4 text-3xl font-semibold text-[#D6D6D6]">{title}</div>
-        <div className="text-lg text-[#D6D6D6]">{info}</div>
+        <div className="py-1 lg:py-4 text-lg lg:text-3xl font-semibold text-[#D6D6D6]">{title}</div>
+        <div className="text-md text-[#D6D6D6]">{info}</div>
       </div>
-      <div className="flex justify-center items-end gap-8 mb-4">
+      <div className="flex justify-center items-end gap-8 py-2 lg:mb-4">
         <a href="https://github.com/brandonullman" target="_blank" className="my-auto"><GithubIcon width="32px" height="32px"/></a>
         <DemoButton />
       </div>
@@ -28,15 +28,15 @@ const ProjectInfo = ({ title, info, demoUrl, repoUrl }) => {
 const Project = ({ alignment, image, title, info, demoUrl, repoUrl }) => {
 
   return (
-    <div className="h-[300px] flex border border-black rounded-md">
-      { alignment === 'left' && <div className="bg-[#0d2636] w-1/3 rounded-l-md">
+    <div className="h-[300px] lg:flex border border-black rounded-md">
+      { alignment === 'left' && <div className="bg-[#0d2636] lg:w-1/3 rounded-l-md">
         <ProjectInfo title={title} info={info} />
       </div>
       }
-      <div className={`bg-[#555555] w-2/3 ${alignment === 'left' ? 'rounded-r-md' : 'rounded-l-md'}`}>
+      <div className={`bg-[#555555] lg:w-2/3 ${alignment === 'left' ? 'rounded-r-md' : 'rounded-l-md'}`}>
         <img />
       </div>
-      { alignment === 'right' && <div className="bg-[#0d2636] w-1/3 rounded-r-md">
+      { alignment === 'right' && <div className="bg-[#0d2636] lg:w-1/3 rounded-r-md">
         <ProjectInfo title={title} info={info} />
       </div>
       }
@@ -47,7 +47,7 @@ const Project = ({ alignment, image, title, info, demoUrl, repoUrl }) => {
 const Projects = () => {
 
   return (
-    <div className="mt-32 w-1/2 mx-auto space-y-8">
+    <div className="px-4 mt-12 lg:mt-32 lg:w-[70%] mx-auto space-y-8" id="projects">
       <Project alignment="left" title="Project 1" info="Test Text Whoop Whoop Whoop"/>
       <Project alignment="right" title="Project 2" info="Test Text Whoop Whoop Whoop"/>
       <Project alignment="left" title="Project 3" info="Test Text Whoop Whoop Whoop"/>

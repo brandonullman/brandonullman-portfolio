@@ -17,7 +17,7 @@ import typescript from './media/typescript.png';
 
 const SkillsSection = ({ title, children }) => {
   return (
-    <div className="flex flex-col items-center bg-[#0d2636] w-[450px] rounded-md py-4 border border-black">
+    <div className="md:flex md:flex-col items-center bg-[#0d2636] md:w-[50%] rounded-md py-4 border m-8 border-black">
       <h1 className="text-3xl font-semibold text-[#D6D6D6]">{title}</h1>
       <div className="grid grid-cols-3 gap-10 m-8">{children}</div>
     </div>
@@ -35,7 +35,7 @@ const SkillsIcon = ({ icon, title }) => {
 
 const Skills = () => {
   return (
-    <div className="flex mt-32 justify-between mx-auto w-[50%]">
+    <div className="md:flex mt-12 lg:mt-32 lg:justify-between mx-auto px-4 lg:w-[70%] text-center" id="skills">
       <SkillsSection title="Languages and Frameworks">
         <SkillsIcon icon={html} title="HTML"/>
         <SkillsIcon icon={css} title="CSS"/>
