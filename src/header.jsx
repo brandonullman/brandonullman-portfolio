@@ -47,7 +47,7 @@ const Header = () => {
     }>
         <NavLink text="About" id="about"/>
         <NavLink text="Skills" id="skills"/>
-        <NavLink text="Projects" id="projects"/>
+        {/* <NavLink text="Projects" id="projects"/> */}
         <NavLink text="Contact" id="contact"/>
     </nav>
   );

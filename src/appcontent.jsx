@@ -44,9 +44,8 @@ const AppContent = () => {
         </h1>
       </div>
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
       <ContactForm />
-      {/* <MediaFooter /> */}
     </div>
   );
 };
