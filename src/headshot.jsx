@@ -1,12 +1,12 @@
 import React from 'react';
-import brandonPicture from './media/brandon-picture.jpg';
+import brandonPicture from './media/brandon-headshot.jpg';
 
 const Headshot = () => {
 
   return (
     <div className="w-[70%] h-[70%] xl:w-[600px] xl:h-[600px]">
       <svg viewBox="0 0 500 500">
-        <image x="15" y="50" width="95%" height="95%" clip-path="url(#shape)" href={brandonPicture}/>                                                                 
+        <image x="15" y="60" width="95%" height="95%" clip-path="url(#shape)" href={brandonPicture}/>                                                                 
         <clipPath id="shape">
           <path>                            
             <animate
